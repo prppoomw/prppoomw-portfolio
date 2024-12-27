@@ -26,7 +26,9 @@ const GridItems = () => {
                             <div>
                                 <p className="grid-headtext">{item.headtext}</p>
                                 <p className="grid-subtext">{item.subtext}</p>
-                                <Button name="Contact Me" isBeam containerClass="w-full mt-10"/>
+                                <a href="#contact" className="w-fit">
+                                    <Button name="Contact Me" isBeam containerClass="w-full mt-10"/>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -45,7 +47,7 @@ const GridItems = () => {
                 )
             case 5:
                 return (
-                    <div key={item.id} className="xl:col-span-1 xl:row-span-2">
+                    <div key={item.id} id = "contact" className="xl:col-span-1 xl:row-span-2">
                         <div className="grid-container">
                             <img src={item.img} alt={item.img} className="w-full md:h-[126px] sm:h-[276px] h-fit object-cover sm:object-top"/>
                             <div className="space-y-2">
@@ -105,7 +107,7 @@ const GridGlobe = () => {
 const About = () => {
 
     return (
-        <section className="c-space my-20">
+        <section className="c-space my-20" id="about">
             <div className="grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-5 h-full">
                 <GridItems/>
             </div>

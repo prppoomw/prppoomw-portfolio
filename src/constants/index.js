@@ -11,11 +11,16 @@ export const navLinks = [
     },
     {
         id: 3,
-        name: 'Work',
-        href: '#work',
+        name: 'Project',
+        href: '#project',
     },
     {
         id: 4,
+        name: 'Experience',
+        href: '#experience',
+    },
+    {
+        id: 5,
         name: 'Contact',
         href: '#contact',
     },
@@ -36,7 +41,7 @@ export const aboutDetail = [
     },
     {
         id: 3,
-        headtext: 'Location (🌍 !Let’s play with model)',
+        headtext: 'Location 🌍',
         subtext: 'I’m based in Bangkok, Thailand. I’m currently seeking full-time opportunities in the tech industry. If you have any questions or would like to connect, please don’t hesitate to reach out.',
     },
     {
@@ -119,7 +124,7 @@ export const myProjects = [
             'Implemented services for game outcome determination, scoring, recording game history, and game reset functionalities.\n\n' +
             'Interfaced with a MySQL database through Kafka producer and consumer for data transmission and caching game history using Redis.',
         href: 'https://github.com/prppoomw/rock-paper-scissors-Game',
-        texture: '',
+        texture: '/textures/project/rpc.mov',
         logo: '/assets/rpc.png',
         logoStyle: {
             backgroundColor: '#60f5a1',
@@ -154,8 +159,12 @@ export const myProjects = [
     },
     {
         title: 'Prppoomw Portfolio',
-        description: '',
-        texture: '',
+        description: 'Developed a web application using React to create an interactive and visually appealing portfolio website.\n\n' +
+            'Incorporated Three.js for 3D element rendering, adding depth and dynamic visuals to the user experience.\n\n' +
+            'Styled the website with Tailwind CSS for a modern and responsive design.\n\n' +
+            '> Learned from JSMastery',
+        href: 'https://github.com/prppoomw/prppoomw-portfolio',
+        texture: '/textures/project/portfolio.mov',
         logo: '/assets/portfolio.svg',
         logoStyle: {
             backgroundColor: '#0E1F38',
@@ -186,30 +195,78 @@ export const myProjects = [
 export const workExperiences = [
     {
         id: 1,
-        name: 'Framer',
-        pos: 'Lead Web Developer',
-        duration: '2022 - Present',
-        title: "Framer serves as my go-to tool for creating interactive prototypes. I use it to bring designs to  life, allowing stakeholders to experience the user flow and interactions before development.",
-        icon: '/assets/framer.svg',
-        animation: 'victory',
-    },
-    {
-        id: 2,
-        name: 'Figma',
-        pos: 'Web Developer',
-        duration: '2020 - 2022',
-        title: "Figma is my collaborative design platform of choice. I utilize it to work seamlessly with team members and clients, facilitating real-time feedback and design iterations. Its cloud-based.",
-        icon: '/assets/figma.svg',
+        name: 'The Stock Exchange of Thailand - SET',
+        pos: 'Full Stack Developer - Intern',
+        duration: 'Jun 2024 - Dec 2024',
+        title: "Collaborated in a Scrum team to design, develop, and enhance internal services primarily using Java Spring Boot and React to align solutions with requirements.\n\n" +
+            "Using Cypress for automated end-to-end testing of internal web applications, ensuring reliable workflows and functional accuracy.\n\n" +
+            "Designed and developed Exchange Data Streaming System\n" +
+            "-- Developed a high-frequency, real-time data streaming solution using Java Spring Boot, featuring WebSocket-based architecture to enable instant data accessibility\n" +
+            "-- Integrated and configured KeyCloak for managing user authentication and authorization.\n" +
+            "-- Deployed a Redpanda cluster(compatible with Kafka), ensuring seamless integration, high availability, fault tolerance and scalability for real-time data publishing.\n" +
+            "-- Integrated Prometheus and Grafana for monitoring and visualizing application metrics, enabling real-time performance insights and improved system observability.\n" +
+            "-- Developed and implemented performance testing tools using Golang, creating producer and client scripts to evaluate real-time system performance under load, identify bottlenecks, and optimize throughput and latency.\n" +
+            "-- Built CI/CD pipelines using Jenkins and Gitlab to automate build, test, and deployment processes.",
+        icon: '/assets/set.png',
         animation: 'clapping',
-    },
-    {
-        id: 3,
-        name: 'Notion',
-        pos: 'Junior Web Developer',
-        duration: '2019 - 2020',
-        title: "Notion helps me keep my projects organized. I use it for project management, task tracking, and as a central hub for documentation, ensuring that everything from design notes to.",
-        icon: '/assets/notion.svg',
-        animation: 'salute',
+        tags: [
+            {
+                id: 1,
+                name: 'Spring Boot',
+                path: '/assets/spring.svg',
+            },
+            {
+                id: 2,
+                name: 'React',
+                path: '/assets/react.svg',
+
+            },
+            {
+                id: 3,
+                name: 'MySQL',
+                path: 'assets/mysql.svg',
+            },
+            {
+                id: 4,
+                name: 'Kafka',
+                path: '/assets/kafka.svg',
+            },
+            {
+                id: 5,
+                name: 'Redpanda',
+                path: '/assets/redpanda.png',
+            },
+            {
+                id: 6,
+                name: 'Prometheus',
+                path: '/assets/prometheus.svg',
+            },
+            {
+                id: 7,
+                name: 'Grafana',
+                path: '/assets/grafana.svg',
+            },
+            {
+                id: 8,
+                name: 'Go',
+                path: '/assets/go.svg',
+            },
+            {
+                id: 9,
+                name: 'Gitlab',
+                path: '/assets/gitlab.svg',
+            },
+            {
+                id: 10,
+                name: 'Docker',
+                path: '/assets/docker.svg',
+            },
+            {
+                id: 11,
+                name: 'Jenkins',
+                path: '/assets/jenkins.svg',
+            },
+        ],
     },
 ];
 
