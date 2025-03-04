@@ -19,7 +19,7 @@ pipeline {
         stage('Build and Push Docker Image') {
             steps {
                 script {
-                    def image = docker.build("${params.IMAGE_NAME}:${IMAGE_TAG}")
+                    def image = docker.build("${params.IMAGE_NAME}:${IMAGE_TAG}", "--platform=linux/amd64 .")
                     docker.withRegistry('https://registry.hub.docker.com', 'docker-hub-credentials') {
                         image.push()
                         image.push('latest')
