@@ -18,10 +18,12 @@ pipeline {
         }
         stage('Build and Push Docker Image') {
             steps {
-                def image = docker.build("${param.IMAGE_NAME}:${IMAGE_TAG}")
-                docker.withRegistry('https://registry.hub.docker.com', 'docker-hub-credentials') {
-                    image.push()
-                    image.push('latest')
+                script {
+                    def image = docker.build("${param.IMAGE_NAME}:${IMAGE_TAG}")
+                    docker.withRegistry('https://registry.hub.docker.com', 'docker-hub-credentials') {
+                        image.push()
+                        image.push('latest')
+                    }
                 }
             }
         }
