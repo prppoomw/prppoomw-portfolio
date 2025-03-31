@@ -198,15 +198,19 @@ export const workExperiences = [
         name: 'The Stock Exchange of Thailand - SET',
         pos: 'Full Stack Developer - Intern',
         duration: 'Jun 2024 - Dec 2024',
-        title: "Collaborated in a Scrum team to design, develop, and enhance internal services primarily using Java Spring Boot and React to align solutions with requirements.\n\n" +
-            "Using Cypress for automated end-to-end testing of internal web applications, ensuring reliable workflows and functional accuracy.\n\n" +
-            "Designed and developed Exchange Data Streaming System\n" +
-            "-- Developed a high-frequency, real-time data streaming solution using Java Spring Boot, featuring WebSocket-based architecture to enable instant data accessibility\n" +
-            "-- Integrated and configured KeyCloak for managing user authentication and authorization.\n" +
-            "-- Deployed a Redpanda cluster(compatible with Kafka), ensuring seamless integration, high availability, fault tolerance and scalability for real-time data publishing.\n" +
-            "-- Integrated Prometheus and Grafana for monitoring and visualizing application metrics, enabling real-time performance insights and improved system observability.\n" +
-            "-- Developed and implemented performance testing tools using Golang, creating producer and client scripts to evaluate real-time system performance under load, identify bottlenecks, and optimize throughput and latency.\n" +
-            "-- Built CI/CD pipelines using Jenkins and Gitlab to automate build, test, and deployment processes.",
+        title: "Collaborated with a Scrum team to design and develop internal services primarily using Java Spring Boot, React, and MySQL, ensuring alignment with operational user requirements.\n\n" +
+            "Assigned to develop the Data Streaming System to provide real-time market data.\n" +
+            "- Developed a high-frequency, real-time data streaming system using Java Spring Boot with a WebSocket-based architecture.\n" +
+            "- Implemented user authentication and authorization for services using Keycloak, OAuth2, and Spring Security.\n" +
+            "- Utilized Redpanda (Kafka-compatible) for efficient data distribution and reliable message delivery, deploying an on-premise Redpanda cluster to ensure high availability, fault tolerance, and scalability.\n" +
+            "- Integrated Prometheus and Grafana to monitor the performance and health of services and the Redpanda cluster.\n" +
+            "- Built CI/CD pipelines with Jenkins, integrating Docker and GitLab repository to automate build, test, and deploy.\n" +
+            "- Created producer and client load scripts in Go to evaluate service performance and identify bottlenecks.\n\n" +
+            "Assigned to migrate the historical data retrieval system from another team.\n" +
+            "- Migrated Kafka-related services and replaced Kafka with Redpanda to improve performance.\n" +
+            "- Optimized Logstash pipelines to restructure data processing, ensuring seamless compatibility with the team's systems.\n" +
+            "- Refactored Jenkins CI/CD pipeline and associated script files to align with the team's standards.\n\n" +
+            "Utilized Cypress for automated testing of internal web applications, ensuring workflow efficiency and functional accuracy.",
         icon: '/assets/set.png',
         animation: 'clapping',
         tags: [
