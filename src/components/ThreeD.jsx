@@ -9,7 +9,7 @@ Title: Vendel's Workshop
 import { useGLTF } from '@react-three/drei'
 
 const ThreeD = (props) => {
-        const { nodes, materials } = useGLTF('/models/vendels_workshop.glb')
+        const { nodes, materials } = useGLTF('./models/vendels_workshop.glb')
         return (
             <group {...props} dispose={null}>
                     <group rotation={[-Math.PI / 2, 0, 0]}>
@@ -198,6 +198,6 @@ const ThreeD = (props) => {
         )
 }
 
-useGLTF.preload('/models/vendels_workshop.glb')
+useGLTF.preload('./models/vendels_workshop.glb')
 
 export default ThreeD;

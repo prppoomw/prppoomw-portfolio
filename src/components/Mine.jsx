@@ -7,10 +7,10 @@ import {useAnimations, useFBX, useGLTF} from '@react-three/drei'
 
 const Mine = ({animationName = 'idle', ...props}) => {
     const group = useRef();
-    const { nodes, materials } = useGLTF('/models/human/mine.glb');
+    const { nodes, materials } = useGLTF('./models/human/mine.glb');
 
-    const {animations: idleAnimation} = useFBX('/models/animations/idle.fbx');
-    const {animations: clappingAnimation} = useFBX('/models/animations/clapping.fbx');
+    const {animations: idleAnimation} = useFBX('./models/animations/idle.fbx');
+    const {animations: clappingAnimation} = useFBX('./models/animations/clapping.fbx');
 
     idleAnimation[0].name = 'idle';
     clappingAnimation[0].name = 'clapping';
@@ -86,6 +86,6 @@ const Mine = ({animationName = 'idle', ...props}) => {
     )
 }
 
-useGLTF.preload('/models/human/mine.glb')
+useGLTF.preload('./models/human/mine.glb')
 
 export default Mine;

@@ -5,7 +5,7 @@ import {useGSAP} from "@gsap/react";
 
 const Target = (props) => {
     const targetRef = useRef()
-    const {scene} = useGLTF('/models/model.gltf')
+    const {scene} = useGLTF('./models/model.gltf')
 
     useGSAP(() => {
         gsap.to(targetRef.current.position, {
