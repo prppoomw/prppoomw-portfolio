@@ -7,10 +7,9 @@ import {useGSAP} from "@gsap/react";
 import gsap from "gsap";
 
 const DemeComputer = (props) => {
-    const base = import.meta.env.BASE_URL;
     const group = useRef()
-    const { nodes, materials} = useGLTF(base + '/models/computer.glb')
-    const texture = useVideoTexture(props.texture ? props.texture : base + '/textures/ebook.mp4')
+    const { nodes, materials} = useGLTF('/models/computer.glb')
+    const texture = useVideoTexture(props.texture ? props.texture : '/textures/ebook.mp4')
     useGSAP(() => {
         gsap.from(group.current.rotation, {
             y: Math.PI / 2,
@@ -1013,6 +1012,6 @@ const DemeComputer = (props) => {
     )
 }
 
-useGLTF.preload(base + '/models/computer.glb')
+useGLTF.preload('/models/computer.glb')
 
 export default DemeComputer

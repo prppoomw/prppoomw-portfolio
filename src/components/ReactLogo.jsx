@@ -9,8 +9,7 @@
 import { Float, useGLTF } from '@react-three/drei';
 
 const ReactLogo = (props) => {
-    const base = import.meta.env.BASE_URL;
-    const { nodes, materials } = useGLTF(base + 'models/react.glb');
+    const { nodes, materials } = useGLTF('models/react.glb');
 
     return (
         <Float floatIntensity={1}>
@@ -27,6 +26,6 @@ const ReactLogo = (props) => {
     );
 };
 
-useGLTF.preload(base + 'models/react.glb');
+useGLTF.preload('models/react.glb');
 
 export default ReactLogo;
