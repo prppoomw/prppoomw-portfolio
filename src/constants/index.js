@@ -180,16 +180,11 @@ export const myProjects = [
             },
             {
                 id: 2,
-                name: 'MongoDB',
-                path: './assets/mongo.svg',
-            },
-            {
-                id: 3,
                 name: 'React',
                 path: './assets/react.svg',
             },
             {
-                id: 4,
+                id: 3,
                 name: 'Tailwind',
                 path: './assets/tailwind.svg',
             },
