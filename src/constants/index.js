@@ -124,7 +124,7 @@ export const myProjects = [
             'Implemented services for game outcome determination, scoring, recording game history, and game reset functionalities.\n\n' +
             'Interfaced with a MySQL database through Kafka producer and consumer for data transmission and caching game history using Redis.',
         href: 'https://github.com/prppoomw/rock-paper-scissors-Game',
-        texture: './textures/project/rpc.mov',
+        texture: './textures/project/rps.mov',
         logo: './assets/rpc.png',
         logoStyle: {
             backgroundColor: '#60f5a1',
@@ -154,6 +154,44 @@ export const myProjects = [
                 id: 4,
                 name: 'Redis',
                 path: './assets/redis.svg',
+            },
+        ],
+    },
+    {
+        title: 'Blog Application',
+        description: 'Developed API services using Go with Gin and MongoDB for backend functionality.\n\n' +
+        'Integrated Clerk for authentication and user management.\n\n' +
+        'Built the user interface with Vite, React, and Tailwind CSS, leveraging libraries like React Router and Axios.\n\n' +
+        'Integrated ImageKit for resource management, optimizing image handling across both frontend and backend.',
+        href: 'https://github.com/prppoomw',
+        texture: './textures/project/blogapp.mov',
+        logo: './assets/portfolio.svg',
+        logoStyle: {
+            backgroundColor: '#0E1F38',
+            border: '0.2px solid #0E2D58',
+            boxShadow: '0px 0px 60px 0px #2F67B64D',
+        },
+        spotlight: './assets/spotlight4.png',
+        tags: [
+            {
+                id: 1,
+                name: 'Go',
+                path: './assets/go.svg',
+            },
+            {
+                id: 2,
+                name: 'MongoDB',
+                path: './assets/mongo.svg',
+            },
+            {
+                id: 3,
+                name: 'React',
+                path: './assets/react.svg',
+            },
+            {
+                id: 4,
+                name: 'Tailwind',
+                path: './assets/tailwind.svg',
             },
         ],
     },
