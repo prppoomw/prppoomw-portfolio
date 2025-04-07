@@ -55,7 +55,7 @@ Integrated Clerk for authentication and user management.
 
 Built the user interface with Vite, React, and Tailwind CSS, leveraging libraries like React Router and Axios.
 
-Integrated ImageKit for resource management, optimizing image handling across both frontend and backend.`,href:"https://github.com/prppoomw",texture:"./textures/project/blogapp.mov",logo:"./assets/portfolio.svg",logoStyle:{backgroundColor:"#0E1F38",border:"0.2px solid #0E2D58",boxShadow:"0px 0px 60px 0px #2F67B64D"},spotlight:"./assets/spotlight4.png",tags:[{id:1,name:"Go",path:"./assets/go.svg"},{id:2,name:"MongoDB",path:"./assets/mongo.svg"},{id:3,name:"React",path:"./assets/react.svg"},{id:4,name:"Tailwind",path:"./assets/tailwind.svg"}]},{title:"Prppoomw Portfolio",description:`Developed a web application using React to create an interactive and visually appealing portfolio website.
+Integrated ImageKit for resource management, optimizing image handling across both frontend and backend.`,href:"https://github.com/prppoomw",texture:"./textures/project/blogapp.mov",logo:"./assets/portfolio.svg",logoStyle:{backgroundColor:"#0E1F38",border:"0.2px solid #0E2D58",boxShadow:"0px 0px 60px 0px #2F67B64D"},spotlight:"./assets/spotlight4.png",tags:[{id:1,name:"Go",path:"./assets/go.svg"},{id:2,name:"React",path:"./assets/react.svg"},{id:3,name:"Tailwind",path:"./assets/tailwind.svg"}]},{title:"Prppoomw Portfolio",description:`Developed a web application using React to create an interactive and visually appealing portfolio website.
 
 Incorporated Three.js for 3D element rendering, adding depth and dynamic visuals to the user experience.
 
